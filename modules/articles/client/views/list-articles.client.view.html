@@ -11,7 +11,7 @@
         <span ng-if="article.user" ng-bind="article.user.displayName"></span>
         <span ng-if="!article.user">Deleted User</span>
       </small>
-      <img style="width:100px" ng-src="article.image">
+      <img style="width:100px" ng-src="{{article.image}}">
       <h4 class="list-group-item-heading" ng-bind="article.title"></h4>
       <p class="list-group-item-text" ng-bind="article.content"></p>
     </a>
